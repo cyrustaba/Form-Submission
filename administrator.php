@@ -30,7 +30,7 @@
                 </tr>
 <?php
 
-    $con = mysqli_connect("localhost", "root", "", "login_sample_db");    // Establishing a connection to the database
+    $con = mysqli_connect("localhost", "root", "", "lab2");    // Establishing a connection to the database
 
     if(! $con)
     {

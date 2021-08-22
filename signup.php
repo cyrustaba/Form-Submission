@@ -21,7 +21,7 @@ session_start();
             die;
         }else
         {
-            echo "Please enter some valid information!";
+            echo "Please enter some valid information!"; //if the user enters numeric values as their username, they are alerted with this message
         }
     }
 ?>
