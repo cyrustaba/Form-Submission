@@ -22,7 +22,7 @@ function check_login($con)
     die;
 }
 
-function random_num($length)
+function random_num($length) //random_num created to accomodate a user signing up their username using numeric format
 {
     $text = "";
     if($length < 5)
@@ -33,7 +33,6 @@ function random_num($length)
     $len = rand(4, $length);
 
     for($i=0; $i < $len; $i++){
-        # code...
         $text .= rand(0,9);
     }
 

@@ -25,13 +25,13 @@ include("functions.php");
                     
                     if($user_data['password'] === $password && $user_data['user_name'] !== 'Administrator')
                     {
-                        $_SESSION['user_id'] = $user_data['user_id'];
+                        $_SESSION['user_id'] = $user_data['user_id']; //regular user directed to index page welcoming user by username
                         header("Location: index.php");
                         die;
                     }
-                else{
-                    header("Location: administrator.php");
-                }
+                    else{ //if user is 'Administrator', direct them to the administrator page displaying all user data
+                        header("Location: administrator.php");
+                    }
                 }   
             }
             echo "Wrong username or password!";
@@ -55,11 +55,11 @@ include("functions.php");
     <style type="text/css">
 
     #text{
-    height: 25px;
-    border-radius:5px;
-    padding:4px;
-    border: solid thin #aaa;
-    width:100%;
+        height: 25px;
+        border-radius:5px;
+        padding:4px;
+        border: solid thin #aaa;
+        width:100%;
     }
 
     #button{
@@ -71,10 +71,16 @@ include("functions.php");
     }
     
     #box{
-            background-color: grey;
-            margin:auto;
-            width: 300px;
-            padding: 20px;
+        background-color: pink;
+        margin:auto;
+        width: 400px;
+        height: 300px;
+        padding: 20px;
+        border:solid;
+    }
+    body{
+        background-color:blue;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     </style>

@@ -38,11 +38,11 @@ session_start();
     <style type="text/css">
 
     #text{
-    height: 25px;
-    border-radius:5px;
-    padding:4px;
-    border: solid thin #aaa;
-    width:100%;
+        height: 25px;
+        border-radius:5px;
+        padding:4px;
+        border: solid thin #aaa;
+        width:100%;
     }
 
     #button{
@@ -54,10 +54,16 @@ session_start();
     }
     
     #box{
-            background-color: grey;
-            margin:auto;
-            width: 300px;
-            padding: 20px;
+        background-color: pink;
+        margin:auto;
+        width: 400px;
+        height: 300px;
+        padding: 20px;
+        border:solid;
+    }
+    body{
+        background-color:blue;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     </style>
